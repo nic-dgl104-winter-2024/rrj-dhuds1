@@ -1,11 +1,6 @@
 # Gleam Website Contributions
 By Dawson
 
-## Intro
-Heyo! Firstly, I wanted to mention that I was introduced to gleam by a youtuber name [Theo - t3.gg](https://www.youtube.com/watch?v=_I-CSgoCgsk) => [Video](https://www.youtube.com/watch?v=_I-CSgoCgsk)
-
-I'm not overly confident in my programming abilities, nor my ability to contribute in a meaningful way towards projects, but I was very hopeful after I started reading the Issues found in the [Gleam Repo](https://github.com/gleam-lang/gleam). The creator of the project [Louis Pilford @Ipil](https://github.com/lpil) is an incredibly kind and passiant individual who answers promptly in every issue I've looked at. I've been diligant in reading new issues and issues labled "good first issue" but I was never able to think of an appropriate solution for their problem. Until recently, I was only aware of their main repo, but later came across their [website repo](https://github.com/gleam-lang/website).
-
 ## Issue
 There were a few things that I noticed within "issues", mainly [issue #354](https://github.com/gleam-lang/website/issues/354) where their main sponsor logo was difficult to read on its dark background.
 
