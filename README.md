@@ -1,0 +1,2 @@
+# Overview
+This will be my jounrnal, where I will document the requirements, learning processes and contributions that I've taken. As you can see my the creation, and commit dates I have not been a very dudiligent student when it comes to entering my information, and I'll be needing to write most of it down now. I would like to make a quick side note, that a majority of my efforts in the community project was spent on the pattern library, as I let my anxiety get the better of me.
