@@ -23,13 +23,64 @@ Afterwards, I was looking at the [News page](https://gleam.run/news/) and felt l
 
 I added a `::before` to the `<li>` and set it to `var(---color-faff-pink)` which is one of the main highlight colors. I reduced the `<span>` published text size to `var(--font-size-small)` and its color to `var(--color-code-grey)`. I wanted to keep consistent styling, which is why I used the `:root` variables that we're initially created. 
 
-Inside the `news.html` file I added an `<a>` tag to the `{{ post.author}}` and then gave it the `.links` and `.author` class and set its `target="_blank"` with an `href="{{post.author-link}}"`. Assigning a link to the author isn't very useful right now, as there is only a single author, but I was attempting to future proof it, as well as style it. I also gave the `<h2>` which is the `{post.title}` the `.links` class. Lastly, I gave the `.links {transition:color 200ms ease-in-out} .links:hover{ color: var(--color-faff-pink)}` and the `.author {text-decoration: underlined}`.
+styles:
+```CSS
+/* News List Elements */
+.news-posts li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  margin-bottom: var(--gap-4);
+  padding-left: 20px;
+}
+/* Decorative Elements Beside Lists*/
+.news-posts li::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 100%;
+  left: 0;
+  background-color: var(--color-faff-pink);
+  border-radius: 50vw;
+}
+/* publish date and author info */
+.news-posts span {
+  color: var(--color-code-grey); /*color: #d4d4d4*/
+  font-size: var(--font-size-small); /*size: 12px*/
+}
+```
+Inside the `news.html` file I added an `<a>` tag to the `{{ post.author}}` and then gave it the `.links` and `.author` class and set its `target="_blank"` with an `href="{{post.author-link}}"`. Assigning a link to the author isn't very useful right now, as there is only a single author, but I was attempting to future proof it, as well as style it. I also gave the `<h2>` which is the `{post.title}` the `.links` and applied some styles
 
-To fix the spacing issue I had within the `<li>` tag I assigned did `li {display: flex; flex-direction: column; justify-content: space-between;}` to have all of the content spaced evenly within the `<li>`
+```CSS
+.news-posts .links {
+  transition: color 200ms ease-in-out;
+}
+.news-posts .links:hover {
+  color: var(--color-faff-pink);
+}
+.news-posts .author {
+  text-decoration: underline;
+}
+```
 
-Although this change wasn't asked for, or neccesarily needed, I believe it adds a layer of interest to the news page, and also helps to bring attention to the clickable elements. It also breaks up the incredibly white, drawing your eyes to the more important elements, and making the posts slightly more digestible.
+To fix the spacing issue I had within the `<li>` I added the following code
+```CSS
+news-posts li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 20px;
+}
+```
+Which now evenly spaces the content within the `<li>`. I added the `padding-left: 20px;` to keep the decorative elements within the pre defined content wrappers.
 
-Lastly, within the `<li>` I added some custome data attributes `post-tags` and `post-author` with the idea that potentially later on there will be posts with differing tags, and authors. the code looks like `post-tags="{% for tag in post.tags %}{{tag}} {% endfor %}"` and `{{post.author}}`
+Although these change wasn't asked for, or neccesarily needed, I believe it adds a layer of interest to the news page, and also helps to bring attention to the clickable elements. It also breaks up the incredibly white, drawing your eyes to the more important elements, and making the posts slightly more digestible.
+
+Lastly, within the `<li>` `HTML` I added some custome data attributes `post-tags` and `post-author` with the idea that potentially later on there will be posts with differing tags, and authors. the code looks like `post-tags="{% for tag in post.tags %}{{tag}} {% endfor %}"` and `{{post.author}}`
 
 The only thing I would also do is add pagination to the posts, however, I am not very familiar with the jekyll, and don't believe it quite neccesary at this time.
 
