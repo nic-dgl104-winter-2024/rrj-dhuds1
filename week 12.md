@@ -1,1 +1,12 @@
 # Week 12
+Dawson
+
+## Patterns Ahoy
+So I've seen SOOO many people writing `JS` and `React Native` recently, that I'm getting a little jealous. its been so long since I've written `JS` that I've decided to take on a new project. `Observer Live Demo`. Reasons: I found this pattern to be a little confusing initially, and I wanted to reinforce my own understanding, and help maybe create a live demo to demonstrate how it functions. Two: I wanted to write `JS`. Okay you caught me... I really just wanted an excuse to write `JS`. The First step is creating the project! [Here is the Demo](https://github.com/Dhuds1/pattern-library/tree/dhuds-dev). Ok lets clear the air with one thing, did I use chatGPT? YES. For what? Documentation. I'm so accustom to `PHP` that I've forgotten `JS` specific things and I'm too lazy to look through google. I will NOT provide a chat link, but apon request I will give you it. Reasons: There are like 4 different chat threads that are like incredibly long, because after a while of not finding why my code is bugged, I sent it to chatGPT to ask them to debug it, only for them not NOT HELP ME, well be helpful, and I had to debug MY OWN CODE. Well, I can't blame them for not understanding my issues, it was very silly. What was it? I don't remember: trauma bloked. its in the `printer.js` file, the file I've explicitly created a warning on to not look at if you don't want permanent brain damage.
+
+Ok so there are a few reasons on why my code is so complicated. 1: I want to store the 'subjects, subscribers, observers, subject data' in local storage, so that the user can have a pleasant experience! This however, makes my experience not plesant, as I have to reconstruct every single object that pull out of the storage again. Luckily, as I've already known this from my `DGL 113` project I was prepared. What I wasn't prepared for, was the idea of creating exported modules and having a separation of ideas. I wanted to make it so that the modules would be independed from eachother. Did this work? No, absolutely not. But misery loves company, population me, and my [Friend Rocco](https://www.youtube.com/watch?v=wLoAPA_wYn4).
+
+I've also taken it apon myself to stlye the website like Powershell, why? Because at this point I should be considered clinically insane or brain dead. Take your pick.
+
+## Contributions to Community
+None, didn't even look at my community. I forgot they existed, I was caught up in my live demo pattern. Which, doesn't work on the front end and will remain incompleted until after the semester.
